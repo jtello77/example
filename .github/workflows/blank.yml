@@ -1,0 +1,12 @@
+name: example-client-payload-action
+on:
+  repository_dispatch:
+    types: webhook
+
+jobs:
+  test:
+    name: Test
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v1
+      - run: 'curl https://3f734883-101c-489a-b0e9-07e695c9e09d-00-1813dshweuyl6.kirk.replit.dev/en_repo'
